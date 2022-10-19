@@ -30,7 +30,6 @@ function Custom404() {
             >
               <Image
                 src={msn}
-                className={styles.imgCenter}
                 alt="404 Page Not Found"
               />
             </div>
