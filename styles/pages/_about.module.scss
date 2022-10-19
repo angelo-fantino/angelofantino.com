@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the contact and about page.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/index.module" as *;
+
+// _container
+// -----------------------------------------------------------------------------
+
+.containerSpacing {
+    margin-top: $size-24;
+    margin-bottom: $size-24;
+}
+
+.containerBG {
+    background-image: url('../../public/container_image_bg.png');
+    background-repeat: no-repeat;
+    background-position: $align-center;
+}
+
+// _text
+// -----------------------------------------------------------------------------
+
+.aboutTitle {
+    color: $light-color-1;
+    text-align: $align-center;
+}
+
+.aboutSubTitle {
+    color: $light-color-2;
+    text-align: $align-center;
+}
+
+.aboutContentText {
+    color: $light-color-2;
+    font-size: $size-24;
+    text-align: $align-center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}

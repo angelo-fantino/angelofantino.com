@@ -1,0 +1,65 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the services page.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/index.module" as *;
+
+// _container
+// -----------------------------------------------------------------------------
+
+.containerSpacing {
+    margin-top: $size-24;
+    margin-bottom: $size-24;
+}
+
+.containerSkew {
+    background-color: $light-color-3;
+    margin-bottom: $size-80;
+    padding-top: $size-32;
+    transform: skewY(-1deg); // SKEW
+}
+
+.containerUnskew {
+    background-image: url('../../public/container_image_bg.png');
+    background-repeat: no-repeat;
+    background-position: $align-center;
+    transform: skewY(1deg); // UNSKEW
+}
+
+// _effect between sections
+// -----------------------------------------------------------------------------
+
+.sectionLineEffect {
+    border-top: 1px solid;
+    border-color: rgba($dark-color-2, 0.50);
+    height: auto;
+}
+
+// _text
+// -----------------------------------------------------------------------------
+
+.servicesTitle {
+    color: $light-color-1;
+    text-align: $align-center;
+}
+
+.servicesSubTitle {
+    color: $light-color-2;
+    text-align: $align-center;
+}
+
+.servicesContentTitle {
+    color: $dark-color-1;
+    font-size: $size-32;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-align: $align-center;
+}
+
+.servicesContentText {
+    color: $dark-color-1;
+    font-size: $size-24;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-align: $align-justify;
+}

@@ -1,0 +1,107 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the portfolio page.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/index.module" as *;
+
+// _buttons
+// -----------------------------------------------------------------------------
+
+.btnStyle {
+  background-color: $dark-color-1;
+  border: none;
+  color: $light-color-1;
+  padding: $size-8;
+  margin: 0 $size-8;
+  text-align: center;
+  font-size: $size-16;
+  transition: 0.3s;
+}
+
+.btnStyle:hover {
+  background-color: $link-light-color-2;
+  color: $light-color-1;
+}
+
+// _container
+// -----------------------------------------------------------------------------
+
+.containerSpacing {
+  margin-top: $size-24;
+  margin-bottom: $size-24;
+}
+
+.containerSkew {
+  background-color: $light-color-3;
+  margin-bottom: $size-80;
+  padding-top: $size-32;
+  transform: skewY(-1deg); // SKEW
+}
+
+.containerUnskew {
+  background-image: url('../../public/container_image_bg.png');
+  background-repeat: no-repeat;
+  background-position: $align-center;
+  transform: skewY(1deg); // UNSKEW
+}
+
+// _effect between sections
+// -----------------------------------------------------------------------------
+
+.sectionLineEffect {
+  border-top: 1px solid;
+  border-color: rgba($dark-color-2, 0.50);
+  height: auto;
+}
+
+// _image portfolio
+// -----------------------------------------------------------------------------
+
+.modalWidth {
+  max-width: 90%;
+  margin: auto;
+}
+
+.projectImg {
+  max-width: 100%;
+}
+
+.projectThumbnail {
+  max-width: 100%;
+  object-fit: contain;
+  display: flex;
+  justify-content: $align-center;
+  align-items: $align-center;
+  cursor: pointer;
+}
+
+
+
+// _text
+// -----------------------------------------------------------------------------
+
+.portfolioTitle {
+  color: $light-color-1;
+  text-align: $align-center;
+}
+
+.portfolioSubTitle {
+  color: $light-color-2;
+  text-align: $align-center;
+}
+
+.portfolioContentTitle {
+  color: $dark-color-1;
+  font-size: $size-32;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: $align-center;
+}
+
+.portfolioContentText {
+  color: $dark-color-1;
+  font-size: $size-24;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: $align-justify;
+}

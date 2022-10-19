@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the website/application.
+// -----------------------------------------------------------------------------
+
+@use '../abstracts/index.module' as *;
+
+// _footer
+// -----------------------------------------------------------------------------
+
+.footerLineEffect {
+  border-top: 1px solid;
+  border-color: $dark-color-2;
+  box-shadow: $dark-color-1 0 -1px 0;
+  height: auto;
+  padding-top: $size-32;
+}
+
+.footerBottom {
+  color: $light-color-2;
+  height: auto;
+  padding-top: $size-32;
+  padding-bottom: $size-32;
+}
+
+// _footer icon size
+// -----------------------------------------------------------------------------
+
+.footerIconSize {
+  font-size: $size-32;  
+}

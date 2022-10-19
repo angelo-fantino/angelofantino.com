@@ -1,0 +1,85 @@
+// -----------------------------------------------------------------------------
+// This file contains all import links regarded to the styles of this website.
+// -----------------------------------------------------------------------------
+
+@charset "UTF-8";
+
+// Configuration and helpers
+@use "./abstracts/index.module" as *;
+
+// Layout-related sections
+@use "./layout/index.module" as *;
+
+// -----------------------------------------------------------------------------
+// General setup of website layout
+// -----------------------------------------------------------------------------
+
+// _body
+// -----------------------------------------------------------------------------
+
+html,
+body {
+  background-image: url('../public/bg-noise.jpg');
+  background-color: $dark-color-1;
+  background-position: center top;
+  min-height: 100vh;
+  color: $light-color-2;
+  text-align: $align-center;
+  font-family: $font-sans;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+// _effect fade in up
+// -----------------------------------------------------------------------------
+
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 1s;
+  --animation-delay: 0.3s; 
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+// _link
+// -----------------------------------------------------------------------------
+
+a:link, a:visited {
+  color: $light-color-2 !important;
+  text-decoration: $link-decoration !important;
+}
+
+a:active {
+  color: $light-color-1 !important;
+}
+
+a:hover {
+  color: $link-light-color-1 !important;
+  text-decoration: $link-decoration !important;
+  opacity: 1;
+  transition: 0.3s;  
+} 
+
+// -----------------------------------------------------------------------------
+// _reset of HTML elements
+// -----------------------------------------------------------------------------
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
