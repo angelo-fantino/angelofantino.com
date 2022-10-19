@@ -126,7 +126,7 @@ function Portfolio() {
               className={`${styles.containerSpacing} animate__animated animate__fadeInUp`}
             >
               <Image
-                className="imageContent"
+                className={styles.projectThumbnail}
                 src={projects_prog_thumbnail}
                 alt="Project in progress"
               />
