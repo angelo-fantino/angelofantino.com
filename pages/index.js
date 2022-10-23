@@ -18,7 +18,7 @@ export default function Home() {
         <title>Angelo / Front-End Developer / Freelancer ::</title>
         <meta
           name="description"
-          content="Reliable and useful responsive websites to your business, based on the type of objective that you are looking for"
+          content="The aim is to deliver reliable and valuable responsive websites to your business, based on the type of objective the client expects"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -50,9 +50,8 @@ export default function Home() {
               Angelo / Front-End Developer / Freelancer ::
             </h1>
             <h2 className={styles.homeSubTitle}>
-              My mission is to deliver reliable and useful responsive websites
-              to your business, based on the type of objective that you are
-              looking for.
+              The aim is to deliver reliable and valuable responsive websites 
+              to your business, based on the type of objective the client expects.
             </h2>
           </Col>
         </Row>
