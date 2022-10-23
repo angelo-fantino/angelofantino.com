@@ -10,10 +10,10 @@ function About() {
     <>
       {/* "SECTION Head" */}
       <Head>
-        <title>How And Where To Find Me | Angelo Front-End Dev ::</title>
+        <title>How And Where To Contact Me | Angelo Front-End Dev ::</title>
         <meta
           name="description"
-          content="My contact channels are available through e-mail and social networks. You can check out the technologies I am using also."
+          content="The contact channels are available through e-mail and social networks. You can check out the technologies that are used also."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -119,15 +119,6 @@ function About() {
 
           <Col sm="auto">
             <div className={styles.aboutContentText}>VS Code</div>
-          </Col>
-        </Row>
-
-        <Row className="animate__animated animate__fadeInUp">
-          <Col sm={12}>
-            <p className={styles.aboutContentText}>
-              {'"All life is a servitude - Omnis vita servitium est"'}
-              <br />- Seneca, On the Shortness of Life
-            </p>
           </Col>
         </Row>
       </Container>
