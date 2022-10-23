@@ -137,8 +137,9 @@ function Services() {
               className={`${styles.containerSpacing} animate__animated animate__fadeInUp`}
             >
               <p className={styles.servicesContentText}>
-                &#9827; Deployment - The website goes live. I will stay an eye
-                on it the check if any issues may come up.
+                &#9827; Deployment - The website goes live to ensure the content 
+                is up to date to avoid or fix an eventual issue that may occur to 
+                keep the quality of the outcome.
               </p>
             </Col>
           </Row>
