@@ -100,8 +100,7 @@ function Services() {
               <p className={styles.servicesContentTitle}>
                 Development Process ::
                 <br />
-                In order to help you to reach your aim, my process follows the
-                steps:
+                In order to help you to reach your aim, the following step process occurs:
               </p>
             </Col>
 
