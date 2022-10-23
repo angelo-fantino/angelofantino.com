@@ -22,7 +22,7 @@ function About() {
       <Container className={styles.containerSpacing}>
         <Row className="animate__animated animate__fadeInUp">
           <Col sm={12}>
-            <h1 className={styles.aboutTitle}>CONTACT ME ::</h1>
+            <h1 className={styles.aboutTitle}>CONTACT CHANNELS ::</h1>
             <h2 className={styles.aboutSubTitle}>
               <a rel="noreferrer" href="mailto:fantino.angelo@gmail.com">
                 fantino.angelo@gmail.com
