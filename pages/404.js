@@ -1,10 +1,11 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import msn from "../public/404.png";
-import styles from "../styles/abstracts/_variables.module.scss";
+import styles from "../styles/pages/_about.module.scss";
 
 function Custom404() {
   return (
@@ -28,11 +29,11 @@ function Custom404() {
                 justifyContent: "center",
               }}
             >
-              <Image
-                src={msn}
-                alt="404 Page Not Found"
-              />
+              <Image src={msn} alt="404 Page Not Found" />
             </div>
+            <p className={styles.aboutContentText}>
+              <Link href="/">Go back to the homepage</Link>
+            </p>
           </Col>
         </Row>
       </Container>
