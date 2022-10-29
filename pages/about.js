@@ -10,10 +10,10 @@ function About() {
     <>
       {/* "SECTION Head" */}
       <Head>
-        <title>How And Where To Contact Me | Angelo Front-End Dev ::</title>
+        <title>How And Where To Find Me | Angelo Front-End Dev ::</title>
         <meta
           name="description"
-          content="The contact channels are available through e-mail and social networks. You can check out the technologies that are used also."
+          content="My contact channels are available through e-mail and social networks. You can check out the technologies I am using also."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -28,13 +28,18 @@ function About() {
                 fantino.angelo@gmail.com
               </a>
             </h2>
+            <p className={styles.aboutContentText}>
+              <a target="_blank" href="/angelo-resume_v1.pdf">
+                CURRICULUM
+              </a>
+            </p>
           </Col>
         </Row>
       </Container>
 
       {/* "SECTION Content" */}
       <Container
-        className={`${styles.containerBG} animate__animated animate__fadeInUp`}
+        className={`animate__animated animate__fadeInUp`}
       >
         <Row
           className={`${styles.containerSpacing} animate__animated animate__fadeInUp justify-content-center`}
@@ -119,6 +124,33 @@ function About() {
 
           <Col sm="auto">
             <div className={styles.aboutContentText}>VS Code</div>
+          </Col>
+        </Row>
+
+        <Row className={`${styles.containerSpacing} ${styles.containerBG} animate__animated animate__fadeInUp justify-content-center`}>
+          <Col sm={7}>
+          <h3 className={styles.aboutSubTitle}>ABOUT ME ::</h3>
+            <p className={styles.aboutMeText}>
+              What attracts me to technology is the possibility of creating
+              anything my skill makes possible.
+            </p>
+
+            <p className={styles.aboutMeText}>
+              Just as the craftsman materializes his own idea or someone{" "}
+              {"else's"}, the developer, in his own way, does it as well. Both
+              manage to impact {"people's"} lives positively.
+            </p>
+            <p className={styles.aboutMeText}>
+              {" "}
+              I believe that through this tool, I can contribute something good
+              as I have received, even if indirectly, throughout my life through
+              art, technology and texts.
+            </p>
+
+            <p className={styles.aboutMeText}>
+              {'"All life is a servitude"'}, so said, Seneca On the Shortness of
+              Life.
+            </p>
           </Col>
         </Row>
       </Container>
