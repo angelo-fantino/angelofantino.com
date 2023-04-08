@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FaGithub, FaLinkedin, FaTwitter, FaBlogger } from "react-icons/fa";
+import navLogo from "../public/nav_icon.png";
 import navLogoName from "../public/nav_logo_name.png";
 import styles from "../styles/layout/_footer.module.scss";
 
@@ -68,6 +69,12 @@ function Footer() {
 
           <Col md={4}>
             <p>
+              <Image
+                src={navLogo}
+                alt="Angelo Front End Developer Footer Logo"
+              />
+            </p>
+            <p>
               <Image src={navLogoName} alt="Angelo Front End Developer logo" />
             </p>
             <p>
@@ -77,7 +84,7 @@ function Footer() {
           </Col>
         </Row>
         <Row>
-          <Col>&#9827; 2022 - Angelo Fantino</Col>
+          <Col>&#9827; 2022-2023 Angelo Fantino</Col>
         </Row>
       </Container>
     </>

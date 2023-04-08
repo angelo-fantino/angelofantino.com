@@ -2,7 +2,6 @@ import Image from "next/future/image";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import navLogo from "../public/nav_icon.png";
 import navLogoName from "../public/nav_logo_name.png";
 import styles from "../styles/layout/_navbar.module.scss";
 
@@ -16,8 +15,7 @@ function NavBar() {
         sticky="top"
       >
         <Container>
-          <Navbar.Brand href="/">
-            <Image src={navLogo} alt="Angelo Front End Developer Footer Logo" />
+          <Navbar.Brand href="/">            
             <Image src={navLogoName} alt="Angelo Front End Developer logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
