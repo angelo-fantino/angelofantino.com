@@ -29,7 +29,7 @@ function About() {
               </a>
             </h2>
             <p className={styles.aboutContentText}>
-              <a target="_blank" href="/angelo-resume_v1.pdf">
+              <a target="_blank" href="/Angelo-Resume_v1-min.pdf">
                 CURRICULUM
               </a>
             </p>
@@ -38,9 +38,8 @@ function About() {
       </Container>
 
       {/* "SECTION Content" */}
-      <Container
-        className={`animate__animated animate__fadeInUp`}
-      >
+      <Container className={`animate__animated animate__fadeInUp`}>
+        {/* "SECTION Social Links" */}
         <Row
           className={`${styles.containerSpacing} animate__animated animate__fadeInUp justify-content-center`}
         >
@@ -93,6 +92,7 @@ function About() {
           </Col>
         </Row>
 
+        {/* "SECTION Dev Tools" */}
         <Row
           className={`${styles.containerSpacing} animate__animated animate__fadeInUp justify-content-center`}
         >
@@ -123,13 +123,20 @@ function About() {
           </Col>
 
           <Col sm="auto">
+            <div className={styles.aboutContentText}>WordPress</div>
+          </Col>
+
+          <Col sm="auto">
             <div className={styles.aboutContentText}>VS Code</div>
           </Col>
         </Row>
 
-        <Row className={`${styles.containerSpacing} ${styles.containerBG} animate__animated animate__fadeInUp justify-content-center`}>
-          <Col sm={7}>
-          <h3 className={styles.aboutSubTitle}>ABOUT ME ::</h3>
+        {/* "SECTION About Me" */}
+        <Row
+          className={`${styles.containerSpacing} ${styles.containerBG} animate__animated animate__fadeInUp justify-content-center`}
+        >
+          <Col xs={10} xl={8} xxl={7}>
+            <h3 className={styles.aboutSubTitle}>ABOUT ME ::</h3>
             <p className={styles.aboutMeText}>
               What attracts me to technology is the possibility of creating
               anything my skill makes possible.

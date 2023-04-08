@@ -4,8 +4,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
-import topBannerL from "../public/top_bannerL.png";
-import topBannerR from "../public/top_bannerR.png";
+import topBanner from "../public/top-banner.png";
+import sciFiCircle from "../public/sci-fi-circle.png";
 import slide01 from "../public/slide01.png";
 import slide02 from "../public/slide02.png";
 import styles from "../styles/pages/_home.module.scss";
@@ -18,29 +18,27 @@ export default function Home() {
         <title>Angelo / Front-End Developer / Freelancer ::</title>
         <meta
           name="description"
-          content="The aim is to deliver reliable and valuable responsive websites to your business, based on the type of objective the client expects"
+          content="Crafting bespoke web solutions tailored to your unique requirements 
+                utilizing JavaScript libraries, frameworks, and DevTools to deliver 
+                personalized web solutions that meet your specifications and reflect your 
+                vision and stand out in the digital landscape."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* "SECTION Top Banner Img" */}
-      <Container>
-        <Row>
-          <Col md={12} lg={6} className={styles.imgPosition}>
-            <Image
-              src={topBannerL}
-              alt="Angelo Front-End Developer Top Banner"
-            />
-          </Col>
+      {/* "SECTION Top Banner Image" */}
+      <div className={styles.wrapper}>
+        <div className={styles.topBanner}>
+          <Image src={topBanner} alt="Angelo Front-End Developer Top Banner" />
+        </div>
 
-          <Col md={12} lg={6} className={styles.imgPosition}>
-            <Image
-              src={topBannerR}
-              alt="Angelo Front-End Developer Top Banner"
-            />
-          </Col>
-        </Row>
-      </Container>
+        <div className={styles.sciFiCircle}>
+          <Image
+            src={sciFiCircle}
+            alt="Angelo Front-End Developer Top Banner"
+          />
+        </div>
+      </div>
 
       {/* "SECTION Title Subtitle" */}
       <Container className={styles.containerSpacing}>
@@ -50,8 +48,8 @@ export default function Home() {
               Angelo / Front-End Developer / Freelancer ::
             </h1>
             <h2 className={styles.homeSubTitle}>
-              The aim is to deliver reliable and valuable responsive websites 
-              to your business, based on the type of objective the client expects.
+              The aim is to deliver reliable and valuable responsive websites to
+              your business, based on the type of objective the client expects.
             </h2>
           </Col>
         </Row>
