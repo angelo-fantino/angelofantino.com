@@ -57,17 +57,12 @@
 // _image portfolio
 // -----------------------------------------------------------------------------
 
-.modalWidth {
-  max-width: 90%;
-  margin: auto;
-}
-
 .projectThumbnail {
   max-width: 100%;
   object-fit: contain;
   display: flex;
   justify-content: $align-center;
-  align-items: $align-center;
+  align-items: $align-flex-start;
   cursor: pointer;
 }
 

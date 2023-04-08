@@ -37,6 +37,8 @@
   align-items: $align-center;
 }
 
+
+
 // _text
 // -----------------------------------------------------------------------------
 
@@ -55,4 +57,39 @@
   font-size: $size-32; 
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+// _top banner
+// -----------------------------------------------------------------------------
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  height: 34rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.topBanner {    
+  position: absolute;
+  z-index: 3;
+  width: 1060px;
+  object-fit: cover;
+}
+
+.sciFiCircle {    
+  position: absolute;
+  z-index: 2;
+  width: 1060px;
+  object-fit: cover;
+  animation: spin 100s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
